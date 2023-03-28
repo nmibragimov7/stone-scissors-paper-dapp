@@ -1,0 +1,13 @@
+@import "react-toastify/dist/ReactToastify.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-100 text-basic;
+}
+
+.input {
+    @apply border-2 w-full read-only:bg-disabledColor read-only:border-disabledColor leading-normal focus:outline-0 focus:border-secondary border-secondaryLight border-opacity-70 p-4 text-sm;
+}

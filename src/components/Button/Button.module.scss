@@ -1,0 +1,18 @@
+.Button {
+  @apply px-4 py-2 font-light;
+  &.BASE {
+    @apply text-white ring-accent bg-accent ring-1 disabled:ring-basicLight disabled:pointer-events-none disabled:bg-basicLight disabled:text-gray transition-colors active:ring-2 hover:ring-basic hover:bg-basic;
+  }
+
+  &.SECONDARY {
+    @apply text-basic disabled:text-gray disabled:ring-gray disabled:hover:bg-inherit disabled:pointer-events-none disabled:hover:ring-1 ring-1 ring-basic hover:bg-basic hover:text-white active:ring-2 transition-colors;
+  }
+
+  &.BLUE {
+    @apply text-white ring-basic bg-basic ring-1 disabled:ring-secondaryLight disabled:bg-secondaryLight disabled:pointer-events-none disabled:text-gray transition-colors active:ring-2 hover:ring-basic hover:bg-basic;
+  }
+
+  &.DEFAULT {
+    @apply border-2 border-transparent hover:border-b-black transition font-medium;
+  }
+}
